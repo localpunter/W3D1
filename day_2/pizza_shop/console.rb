@@ -1,6 +1,8 @@
 require('pry-byebug')
 require_relative('models/pizza_order')
 
+PizzaOrder.delete_all()
+
 order1 = PizzaOrder.new({
   'first_name' => 'Luke',
   'last_name' => 'Skywalker',
@@ -16,7 +18,7 @@ order2 = PizzaOrder.new({
   })
 
 order1.save()
-order2.save()
+# order2.save()
 orders = PizzaOrder.all()
 binding.pry
 nil
