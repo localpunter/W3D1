@@ -29,7 +29,7 @@ SELECT * FROM movies;
 
 2.  Return ONLY the name column from the 'people' table
 ```sql
-SELECT name FROM people
+SELECT name FROM people;
 ```
 
 3.  Oops! Someone at CodeClan spelled Graham's name wrong! Change it to reflect the proper spelling ('Graeme Broose' should be 'Graham Bruce').
@@ -112,6 +112,6 @@ SELECT * FROM movies;
 
 1.  Research how to delete multiple entries from your table in a single command.
 ```sql
-DELETE FROM movies Where id IN (1,3,5)
+DELETE FROM movies WHERE id IN (1,3,5);
 
 ```
